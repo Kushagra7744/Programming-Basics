@@ -173,7 +173,6 @@ Node *deleteNode(Node *node,int key){
 			Node *temp= inorderSuc(node->right);//leftmost node of right subtree
 			node->data=temp->data;
 			
-//			doubt
 			node->right= deleteNode(node->right,temp->data);
 		}
 	}	

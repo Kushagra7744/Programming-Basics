@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+// Link to AVL_Insert1
+//https://drive.google.com/open?id=13UaVo_IGy60maDfPs_244836VAAQ71vJ
+
+
 struct Node{
 	int data,height;
 	Node *left, *right;
@@ -34,7 +38,7 @@ int getBalanceFactor(Node *node){
 }
 
 
-Node *leftRotate(Node *y){//see img AVL_insert1
+Node *leftRotate(Node *y){//see img AVL_insert1 https://drive.google.com/open?id=13UaVo_IGy60maDfPs_244836VAAQ71vJ
 	Node *x=y->right;
 	Node *T1=x->left;
 	
